@@ -1,8 +1,31 @@
 body{
     font-family: 'Roboto', sans-serif;
     }
+ .container-wrapper{}
+
+
+ .container-wrapper-red{}   
     
-.alert-container{}  
+.alert-container.col-12{
+padding-left: 0; 
+padding-right: 0;
+
+} 
+
+.site-wide-alert{
+    color: #544600;
+     border-radius:0;
+     margin-bottom:0;
+     padding: 5px 15px;
+     background-color:#eec802;
+     border-color: #eec802;
+     border: 1px solid transparent;
+} 
+
+
+
+
+
 .quotes-container{}
 .features-container{} 
 
@@ -11,17 +34,17 @@ body{
 .callout-container{   
     height:100vh;
      background: url("/images/whiskey-background.jpg") no-repeat bottom right fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
 
   display: flex;
   align-items:center;  
   justify-content: center;
   position:relative;
- 
-}
+ }
+
 .opaque-overlay {
     position:absolute;
     top:0;
@@ -29,9 +52,17 @@ body{
     height:100%;
     width:100%;
     background-color:rgba (0,0,0,0.5);
+}
 
+/*PAGE HEADINGS */
 
-
+.page-header{
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+.page-header h2{
+    margin-top: 0;
 }
 
 
@@ -41,14 +72,29 @@ body{
     width: 75px;
     height: 5px;
     border: 0;
-    background-color: #d39e00
+    background-color: #444;
+}
+.block-divider-orange{
+  background-color: #d39e00;  
+}
+.block-divider-short{
+    width: 35px;
+}
+
+/* CONTENT CONTAINERS */
+
+.content-container{
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
 /* NAVBAR */
+
 .navalert-container {  
-    position:absolute; 
+    position: absolute; 
     top:0;
     left:0;
+    z-index: 1;
     padding-left:0;
     padding-right: 0;
 }
@@ -57,18 +103,18 @@ body{
     border: 0;
     width:100%;   
     background-color: rgba(0,0,0,0.25);
-    z-index:1;
     }
     
-.navbar-toggler{  
+.navbar .navbar-toggler{  
     border:0;
 }
 
-.navbar-brand 
+.navbar .navbar-brand 
 {
     color: #fff;
     font-weight: bold;
 }
+
 .navbar.navbar-nav a {
     font-weight:bold;
 
